@@ -13,7 +13,7 @@ This is a FinTech based application that provides user "the one stop solution"to
   - [@priyal005](https://github.com/priyal005)
   - [@Vanshika](https://github.com/vanshikagupta210904)
   - [@smridhikatyal](https://github.com/smridhikatyal)
-# Tecnology Used
+# Technology Used
 - HTML
 - CSS
 - Javascript
