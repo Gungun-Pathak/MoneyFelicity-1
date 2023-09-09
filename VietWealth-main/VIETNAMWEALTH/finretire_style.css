@@ -1,0 +1,82 @@
+﻿@font-face {
+    font-family: "Bodonitown";
+    src: url("./Bodonitown/Bodonitown.ttf"); /* IE9 Compat Modes */
+}
+
+.first-page {
+    padding:0 0 0 70px;
+}
+
+.first-page:nth-child(odd) {
+    background-color: #101727;
+    color: white;
+}
+
+.first-page:nth-child(even) {
+    background-color: white;
+    color: black;
+}
+
+.first-page img {
+    width:100%;
+}
+
+.first-page:nth-child(even) h2 {
+    color: #ff611d;
+}
+
+.first-page h2 {
+    font-size: 80px;
+    font-family: Bodonitown;
+    margin-bottom: 37px;
+}
+
+.first-page:not(:first-child) h2 {
+    font-size: 50px;
+}
+
+.first-page .cap {
+    font-family: Bodonitown;
+    color: #ff611d;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: -50px;
+}
+
+.center {
+    text-align:center;
+    justify-content:center;
+    padding: 100px;
+}
+
+.first-page .button-getstart a {
+    font-family: 'Arial';
+    background: rgb(255,29,88);
+    background: radial-gradient(circle, rgba(255,29,88,1) 0%, rgba(255,97,29,0.9318102240896359) 100%);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    align-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin:0;
+    margin-top:30px;
+}
+
+.first-page .button-getstart a:hover {
+    background: none;
+    background-color: white;
+    color: #101727;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    border: 1px solid #ff611d;
+}
+
+p:not(:first-child) {
+    line-height:2;
+}

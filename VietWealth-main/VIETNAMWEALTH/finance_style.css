@@ -1,0 +1,176 @@
+﻿@font-face {
+    font-family: "Bodonitown";
+    src: url("./Bodonitown/Bodonitown.ttf"); /* IE9 Compat Modes */
+}
+
+html {
+    color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+.fin .first-page .button-getstart a {
+    font-family: 'Arial';
+    background: rgb(255,29,88);
+    background: radial-gradient(circle, rgba(255,29,88,1) 0%, rgba(255,97,29,0.9318102240896359) 100%);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    align-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.fin .first-page .button-getstart a:hover {
+    background: none;
+    background-color: white;
+    color: #101727;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    border: 1px solid #ff611d;
+}
+
+footer {
+    clear: both;
+}
+
+.fin .first-page {
+    padding: 20px 0 20px 0;
+    border-bottom: 4px solid #ff611d;
+}
+
+
+.fin .first-page img {
+    width:100%;
+    float:right;
+}
+
+
+.title {
+    float:right;
+    padding-left:20px;
+}
+
+.grid_2_items {
+    display: flex;
+    padding: 0px;
+    gap:10px;
+}
+
+.content1 {
+    flex: 2;
+    text-align: left;
+    justify-content: center;
+    vertical-align: central;
+    padding: 0px 10px 0 130px;
+}
+
+.content1 h2 {
+    font-size: 90px;
+    font-family: "Bodonitown";
+    margin: 0;
+    letter-spacing: 6px;
+    border-left: 10px solid #ff611d;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.content1 p {
+    font-size: 18px;
+}
+
+.content2 {
+    flex: 2;
+    margin-left: 140px;
+}
+
+.content2 h2 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin: 0;
+    font-family: "Bodonitown";
+}
+
+
+.content2 p {
+    font-size: 18px;
+}
+
+.fin .first-page:nth-child(2n) .content2 h2 {
+    background-color: white;
+    color: #ff611d;
+}
+
+.fin .first-page:nth-child(2n) .content2 p {
+    background-color: white;
+    color: #101727;
+}
+
+.fin .first-page img:nth-child(2n) {
+    width: 100%;
+    float: right;
+}
+
+
+.title:nth-child(2n) {
+    float: right;
+    padding-left: 20px;
+}
+
+.fin .button-getstart a {
+    margin: 0;
+}
+
+.fin .first-page:nth-child(odd) {
+    background-color: #101727;
+    color: white;
+}
+
+.fin .first-page img:nth-child(odd) {
+    width: 100%;
+    float: right;
+}
+
+
+.title:nth-child(odd) {
+    float: left;
+    padding-left: 20px;
+}
+
+
+
+.fin .first-page:nth-child(odd) .button-getstart a {
+    margin: 0;
+    border: 1px solid white;
+    background: unset;
+}
+
+.fin .first-page:nth-child(odd) .button-getstart a:hover {
+    background: white;
+    color: #101727;
+}
+
+p {
+    line-height: 2;
+}
+
+#upper-logo {
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #ff611d;
+    font-family: 'Bodonitown';
+    text-transform: uppercase;
+    margin: 0 0 18px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}

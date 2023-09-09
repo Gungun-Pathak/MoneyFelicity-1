@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>VietWealth - Home page</title>
+    <link rel="icon" href="image\smalllogo.png"
+    type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="other_styling_sheets/banking.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--FontList was getting from the Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">    
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+</head>
+<body>
+    <!--Header Area-->
+    <header>
+        <!--Navigation area-->
+        <nav class="navbar" id="myTopnav">
+            <!--Home (this page), About Us, Fees, My Account, Browse, FAQs, and Contact.-->
+            <a class="navbar-brand" href="home.html">
+                <div class="logo-image">
+                    <!--Source image: https://dribbble.com/shots/14624703-E-Commerce-Logo -->
+                    <img src="https://i.imgur.com/dotYs8i.png" class="img-fluid">
+                </div>
+            </a>
+            <!--Navigation bar-->
+            <div class="nav-items" style="float:right">
+                <!--News, Planning, Log In , Get started, FAQs-->
+                <span class="destinations">
+                    <a href="banking.html" class="active-page">Banking</a>
+                    <a href="investment.html">Investment</a>
+                    <a href="finance.html">Planning</a>
+                    <a href="myaccount.html">My Account</a>
+                    <a href="faq.html">FAQs</a>
+                    <a href="contact.html">Contact</a>
+                </span>
+                <span class="button-login">
+                    <a href="login.html">Log in</a>
+                </span>
+                
+                <span class="button-getstart">
+                    <a href="survey.html">Get started</a>
+                </span>
+                
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+        <article id="banking-page">
+            <!-- first section -->
+            <section class="banking-page-intro-section">
+                <div class="banking-page-container">
+                    <div class="horizontal">
+                        <div class="col-lg" id="col-1">
+                            <p class="banking-page-intro-logo">VietWealth</p>
+                            <h1 class="banking-page-intro-heading" style="border-left: 15px dotted #ff611d; padding-left: 40px;">Banking that streamlines your finances.</h1>
+                            <div class="banking-page-flex-container">
+                                <div class="banking-page-intro-hr-container"><hr></div>
+                                <div class="banking-page-intro-content-container">
+                                    <p id="p1-intro-content">Banking should be effortless.</p>
+                                    <p id="p2-intro-content">
+                                      Zero account fees, up to $1M FDIC insurance through our partner banks, and the convenience of automation.
+                                    </p>
+                                    <a href="login.html" id="button-getstart-in-container">GET STARTED</a>
+                                    <p id="p3-intro-content">
+                                      The VietWealth Cash Account is a product offered by <br> VietWealth Brokerage
+                                      in partnership with ACB Bank.
+                                    </p>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-lg" id="col-2">
+                            <img src="image/Credit card.gif" alt="this slowpoke moves" style="width: 700px; margin-top: -20px; margin-left: -30px; border-radius: 30px;">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- second section -->
+            <section class="banking-page-intro-section" style="background-color: #101727;">
+                <div class="banking-page-container" id="banking-page-container-section2">
+                    <div class="horizontal" id="horizontal-section-2">
+                        <div class="col-lg" id="col-1-2" style="margin-top: 80px;">
+                            <img src="https://i.imgur.com/YOSMR6A.png" style="width: 550px;">
+                        </div>
+                        <div class="col-lg" id="col-2-2">
+                            <h1 class="banking-page-intro-heading" style="font-size: 90px; line-height: 1.25; color:white; letter-spacing: 0; border-right: 15px dotted #ff611d; padding-right: 40px; text-align:right; margin-top: 20px;">All the checking features you need, and then some.</h1>
+                            <div class="banking-page-flex-container" style="margin-top: 80px;">
+                                <div class="banking-page-intro-content-container" id="banking-page-intro-content-container-section2">
+                                    <div style="display: flex;" id="flex-div-1">
+                                        <i class="fa fa-line-chart" aria-hidden="true" style="color: #ff611d; font-family: Font Awesome 5 Free; font-size: 26px; padding-top: 15px;"></i>
+                                        <p id="p1-intro-content" style="color:white; padding-top: 15px;">&nbsp;&nbsp;&nbsp;Earn 0.10% APY on all your cash</p>
+                                    </div>
+                                    <div style="display: flex; margin-top: 55px;" id="flex-div-1">
+                                        <i class="fa fa-times" aria-hidden="true" style="color: #ff611d; font-family: Font Awesome 5 Free; font-size: 30px; padding-top: 10px;"></i>
+                                        <p id="p1-intro-content" style="color:white; padding-top: 10px;">&emsp;No account fees, no overdraft fees</p>
+                                    </div>
+                                    <div style="display: flex;" id="flex-div-1">
+                                        <i class="fa fa-paper-plane" aria-hidden="true" style="color: #ff611d; font-family: Font Awesome 5 Free; font-size: 28px; padding-top: 10px;"></i>
+                                        <p id="p1-intro-content" style="color:white; padding-top: 10px;">&emsp;Send and deposit checks through the app</p>
+                                    </div>
+                                    <div style="display: flex;margin-top: 50px;" id="flex-div-1">
+                                        <i class="fa fa-money" aria-hidden="true" style="color: #ff611d; font-family: Font Awesome 5 Free; font-size: 28px; padding-top: 10px;"></i>
+                                        <p id="p1-intro-content" style="color:white; padding-top: 10px;">&emsp;Pay bills with account and routing numbers</p>
+                                    </div>
+                                    <div style="display: flex;margin-top: 30px;" id="flex-div-1">
+                                        <i class="fa fa-credit-card-alt" aria-hidden="true" style="color: #ff611d; font-family: Font Awesome 5 Free; font-size: 24px; padding-top: 8px;"></i>
+                                        <p id="p1-intro-content" style="color:white; padding-top: 8px;">&emsp;Debit card with 19,000 free ATMs</p>
+                                    </div>
+                                </div>
+                                <div class="banking-page-intro-content-container" id="banking-page-intro-content-container-section2" style="padding-left: 30px;">
+                                    <div style="display: flex;" id="flex-div-1">
+                                        <i class="fa fa-check-square" aria-hidden="true" style="color: #ff611d; font-family: Font Awesome 5 Free; font-size: 24px; padding-top: 10px;"></i>
+                                        <p id="p1-intro-content" style="color:white; line-height: 1.5;">&emsp;Up to $1M FDIC insurance <br>&emsp;through our partner banks</p>
+                                    </div>
+                                    <div style="display: flex;" id="flex-div-1">
+                                        <i class="fa fa-bolt" aria-hidden="true" style="color: #ff611d; font-family: Font Awesome 5 Free; font-size: 28px; padding-top: 10px;"></i>
+                                        <p id="p1-intro-content" style="color:white; padding-top: 10px;">&emsp; Fast transfers to your investing portfolio</p>
+                                    </div>
+                                    <div style="display: flex;" id="flex-div-1">
+                                        <i class="fa fa-user" aria-hidden="true" style="color: #ff611d; font-family: Font Awesome 5 Free; font-size: 28px; padding-top: 10px;"></i>
+                                        <p id="p1-intro-content" style="color:white; line-height: 1.5;">&emsp;Support for Venmo, Cash App, Apple <br>&emsp;Pay and Google Pay and PayPal</p>
+                                    </div>
+                                    <div style="display: flex;" id="flex-div-1">
+                                        <i class="fa fa-repeat" aria-hidden="true" style="color: #ff611d; font-family: Font Awesome 5 Free; font-size: 28px; padding-top: 10px;"></i>
+                                        <p id="p1-intro-content" style="color:white; padding-top: 10px;">&emsp;Unlimited free transfer</p>
+                                    </div>
+                                    <div style="display: flex;" id="flex-div-1">
+                                        <i class="fa fa-tasks" aria-hidden="true" style="color: #ff611d; font-family: Font Awesome 5 Free; font-size: 28px; padding-top: 10px;"></i>
+                                        <p id="p1-intro-content" style="color:white; padding-bottom: 10px; line-height: 1.5;">&emsp;Set up direct deposit and automate <br>&emsp;your paycheck</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- third section -->
+            <section class="banking-page-intro-section">
+                <div class="banking-page-container" id="container1-for-section3">
+                    <h1 id="title-for-section3">Ready to save more, do less?<br>Say goodbye to idle banking.</h1>
+                </div>
+                <div class="banking-page-container" id="container2-for-section3" style="width: 45%;">
+                    <p id="subcontent1-section3" style="margin-bottom: 50px; margin-top:30px;  line-height: 1.5;">
+                        Customize your savings plan and automate your paycheck. <br> We take the chore out of managing your money.
+                    </p>
+                    <a href="login.html" id="button-getstart-in-container">GET STARTED</a>
+                </div>
+                <div class="banking-page-container" id="container3-for-section3" style="margin-top: 60px;">
+                    <img src="image/Checklist-rafiki.png" style="width: 750px; border: 6px dotted #ff611d;">
+                </div>
+                <div class="banking-page-container" id="container4-for-section3" style="margin-top: 60px;">
+                    <h1 id="title-for-container4">If you have questions, we already have answers.</h1>
+                    <p id="subcontent1-container4" style="margin-bottom: 20px; margin-top:20px;">
+                        We get it: money and its terms can be confusing. These are some of the most frequently asked questions when it comes to our Cash Account.
+                    </p>
+                </div>
+                <div id="last-banking-page-container" style="width: 100%; margin: 0 auto; text-align: center;">
+                    <div id="last-horizontal">
+                        <div class="col-lg" id="col-1-4">
+                            <p class="question-titles">Can I move money in between Wealthfront accounts?</p>
+                            <p class="question-contents">You can move money from your Cash Account to your taxable Investment Account.<br><a href="" class="learn-more-link">Learn how easy it is.</a></p>
+                            <p class="question-titles sub-question-titles">Is VietWealth’s Cash Account APY a promotional rate?</p>
+                            <p class="question-contents">No, the VietWealth APY is not a short term promotional rate and applies to all accounts and balances. We’re committed to offering the highest rate we can to our clients. <a href="" class="learn-more-link">Learn more.</a></p>
+                        </div>
+                         <div class="col-lg" id="col-2-4">
+                            <p class="question-titles">How do I withdraw my money?</p>
+                            <p class="question-contents">You can withdraw money at any time. It usually takes only one business day for your withdrawal to arrive in your bank account. If you’ve recently deposited money into your cash account, it may take a few extra days to process.</p>
+                            <p class="question-titles sub-question-titles">Will I be charged any fees?</p>
+                            <p class="question-contents">Nope. There are no account fees for the Cash Account.</p>
+                         </div>
+                         <div class="col-lg" id="col-3-4">
+                            <p class="question-titles">Can I pay bills or use an ATM with the same account?</p>
+                            <p class="question-contents">Yep. You can set up bill pay, and with our debit card, you can get cash from one of 19,000 free ATMs from places like Safeway, Walgreens, CVS, and more.</p>
+                            <p class="question-titles sub-question-titles">Why is my rate subject to change?</p>
+                            <p class="question-contents">The APY on the cash account is dependent on the federal funds rate. As market rates move, we work to ensure that our rates remain as competitive as possible.<br><a href="" class="learn-more-link">Learn more.</a></p>
+                         </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!--Footer Area-->
+    <!-- Element that contains the client's contact email, phone and address details
+        (these can be dummy data). Please put your student name(s) and student id(s) in the footer with a link to your GitHub repository.-->
+    <footer>
+        <div class="flex">
+            <!--Zero Columns-->
+            <!--First Columns-->
+            <div class="footer_column1">
+                <h2>Contact us</h2>
+                <p><i class="fa fa-envelope"></i> Email: vietwealth@gmail.com</br></p>
+                <p>
+                    <i class="fa fa-phone" aria-hidden="true" style='font-size:15px'></i> Phone: (079) 330 7576</br>
+                </p>
+                <p> <i class="fa fa-map-marker" aria-hidden="true"></i> Address: Ho Chi Minh City</p>
+            </div>
+            <!--Second Columns-->
+            <div class="footer_column2">
+                <h2>More</h2>
+                <p>
+                    VietWealth 101
+                </p>
+                <p>
+                    VietWealth Advisor
+                </p>
+                <p>
+                    VietWealth Shop
+                </p>
+            </div>
+
+            <!--Third Columns-->
+            <div class="footer_column3">
+                <!--Remember to add link Github-->
+                <h3><a><i class="fa fa-linkedin" aria-hidden="true"></i></a></h3>
+                <h3><i class="fa fa-facebook-official" aria-hidden="true"></i></h3>
+                <h3><i class="fa fa-twitter" aria-hidden="true"></i></h3>
+            </div>
+        </div>
+        <hr />
+        <div class="footer_col">
+            <a href="terms.html"><span>Terms of Service</span></a>
+            <a href="privacy.html"><span>Privacy Policy</span></a>
+            <span>© VietWealth Inc. 2021</span>
+        </div>
+
+    </footer>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+</html>

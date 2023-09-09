@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>VietWealth - Contact</title>
+    <link rel="icon" href="image\smalllogo.png"
+    type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="other_styling_sheets/contact.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--FontList was getting from the Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">    
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+</head>
+<body>
+    <!--Header Area-->
+    <header>
+        <!--Navigation area-->
+        <nav class="navbar" id="myTopnav">
+            <!--Home (this page), About Us, Fees, My Account, Browse, FAQs, and Contact.-->
+            <a class="navbar-brand" href="home.html">
+                <div class="logo-image">
+                    <!--Source image: https://dribbble.com/shots/14624703-E-Commerce-Logo -->
+                    <img src="https://i.imgur.com/dotYs8i.png" class="img-fluid">
+                </div>
+            </a>
+            <!--Navigation bar-->
+            <div class="nav-items" style="float:right">
+                <!--News, Planning, Log In , Get started, FAQs-->
+                <span class="destinations">
+                    <a href="banking.html">Banking</a>
+                    <a href="investment.html">Investment</a>
+                    <a href="finance.html">Planning</a>
+                    <a href="myaccount.html">My Account</a>
+                    <a href="faq.html">FAQs</a>
+                    <a href="contact.html" class="active-page">Contact</a>
+                </span>
+                <span class="button-login">
+                    <a href="login.html">Log in</a>
+                </span>
+                
+                <span class="button-getstart">
+                    <a href="survey.html">Get started</a>
+                </span>
+                
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+        <div id="main-title-container">
+            <div id="main-title-content">
+                <h1>Get in touch with us</h1>
+            </div>
+        </div>
+
+        <div id="input-boxes-container">
+            <div id="1-div-for-enter">
+                <div id="horizontal-in1">
+                    <div id="sub-horizon1">
+                        <input type="text" placeholder="Name {require}" id="name-input">
+                    </div>
+                    <div id="sub-horizon2">
+                        <input type="text" placeholder="Email {require}" id="email-input">
+                    </div>
+                </div>
+            </div>
+            <div id="2-div-for-enter">
+                <div id="horizontal-in3">
+                    <div id="sub-horizon3">
+                        <input type="text" placeholder="What would you like to tell us?" id="msg-input">
+                        <a href="" id=button-getstart-in-container>Submit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer Area-->
+    <!-- Element that contains the client's contact email, phone and address details
+        (these can be dummy data). Please put your student name(s) and student id(s) in the footer with a link to your GitHub repository.-->
+    <footer>
+        <div class="flex">
+            <!--Zero Columns-->
+            <!--First Columns-->
+            <div class="footer_column1">
+                <h2>Contact us</h2>
+                <p><i class="fa fa-envelope"></i> Email: vietwealth@gmail.com</br></p>
+                <p>
+                    <i class="fa fa-phone" aria-hidden="true" style='font-size:15px'></i> Phone: (079) 330 7576</br>
+                </p>
+                <p> <i class="fa fa-map-marker" aria-hidden="true"></i> Address: Ho Chi Minh City</p>
+            </div>
+            <!--Second Columns-->
+            <div class="footer_column2">
+                <h2>More</h2>
+                <p>
+                    VietWealth 101
+                </p>
+                <p>
+                    VietWealth Advisor
+                </p>
+                <p>
+                    VietWealth Shop
+                </p>
+            </div>
+
+            <!--Third Columns-->
+            <div class="footer_column3">
+                <!--Remember to add link Github-->
+                <h3><a><i class="fa fa-linkedin" aria-hidden="true"></i></a></h3>
+                <h3><i class="fa fa-facebook-official" aria-hidden="true"></i></h3>
+                <h3><i class="fa fa-twitter" aria-hidden="true"></i></h3>
+            </div>
+        </div>
+        <hr />
+        <div class="footer_col">
+            <a href="terms.html"><span>Terms of Service</span></a>
+            <a href="privacy.html"><span>Privacy Policy</span></a>
+            <span>© VietWealth Inc. 2021</span>
+        </div>
+
+    </footer>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+</html>

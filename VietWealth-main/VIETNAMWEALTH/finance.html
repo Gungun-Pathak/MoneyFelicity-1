@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>VietWealth - Planning</title>
+    <link rel="icon" href="image\smalllogo.png"
+          type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="finance_style.css">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--FontList was getting from the Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">    
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+</head>
+<body>
+    <!--Header Area-->
+    <header>
+        <!--Navigation area-->
+        <nav class="navbar" id="myTopnav">
+            <!--Home (this page), About Us, Fees, My Account, Browse, FAQs, and Contact.-->
+            <a class="navbar-brand" href="home.html">
+                <div class="logo-image">
+                    <!--Source image: https://dribbble.com/shots/14624703-E-Commerce-Logo -->
+                    <img src="https://i.imgur.com/dotYs8i.png" class="img-fluid">
+                </div>
+            </a>
+            <!--Navigation bar-->
+            <div class="nav-items" style="float:right">
+                <!--News, Planning, Log In , Get started, FAQs-->
+                <span class="destinations">
+                    <a href="banking.html">Banking</a>
+                    <a href="investment.html">Investment</a>
+                    <a href="finance.html" class="active-page">Planning</a>
+                    <a href="myaccount.html">My Account</a>
+                    <a href="faq.html">FAQs</a>
+                    <a href="contact.html">Contact</a>
+                </span>
+                <span class="button-login">
+                    <a href="login.html">Log in</a>
+                </span>
+                
+                <span class="button-getstart">
+                    <a href="survey.html">Get started</a>
+                </span>
+                
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main class="fin">
+        <!--Overview-->
+        <div class="first-page">
+            <div class="grid_2_items">
+                <div style="flex:1">
+                    <img src="image/fin01.png" />
+                </div>
+                <div style="flex:2" class="content1">
+                    <p id="upper-logo">VietWealth</p>
+                    <h2>FINANCES, REDIFINED.</h2>
+                    <p>Driven by the power of technology, our free planning experience <br> helps you explore what’s possible and provides guidance <br>to optimize your finances. No phone calls required.</p>
+                </div>
+            </div>
+        </div>
+        <!---Time off for travel-->
+        <div class="first-page">
+            <div class="grid_2_items">
+                <div style="flex:1">
+                    <img src="image/fin02.png" />
+                </div>
+                <div style="flex:2" class="content2">
+                    <h2 style="margin-top: 40px;">Time off for travel</h2>
+                    <p>
+                        We’ll show you how much time you can comfortably take off for <br>travel and still stay on track with your other financial priorities. <br>The results may surprise you.
+                    </p>
+                    <p>
+                        See how working remotely, subletting your home, or choosing <br>different destinations can impact the affordability of your trip.
+                    </p>
+                    <span class="button-getstart">
+                        <a href="fintravel.html">GET STARTED</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!---Buy a house-->
+        <div class="first-page">
+            <div class="grid_2_items">
+                <div style="flex:1">
+                    <img src="image/fin03.png" />
+                </div>
+                <div style="flex:2" class="content2">
+                    <h2 style="margin-top: 15px;">Homeownership</h2>
+                    <p>Based on your actual finances, we’ll calculate a home budget <br>that reflects the mortgage you’ll realistically qualify for while <br>factoring in the all-in costs of homeownership.</p>
+                    <p>We’ll help you explore which neighborhoods are in your price <br>range and our Redfin integration allows us to automatically <br>update your plan with the real estate market.</p>
+                    <span class="button-getstart">
+                        <a href="finhouse.html">GET STARTED</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!---Paying for a wedding-->
+        <div class="first-page">
+            <div class="grid_2_items">
+                <div style="flex:1">
+                    <img src="image/fin04.png" />
+                </div>
+                <div style="flex:2" class="content2">
+                    <h2 style="margin-top: 80px;">Wedding</h2>
+                    <p>Driven by the power of technology, our free planning experience <br>helps you explore what’s possible and provides guidance <br>to optimize your finances. No phone calls required.</p>
+                    <span class="button-getstart">
+                        <a href="finwed.html">GET STARTED</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!---Retire early-->
+        <div class="first-page">
+            <div class="grid_2_items">
+                <div style="flex:1">
+                    <img src="image/fin05.png" />
+                </div>
+                <div style="flex:2" class="content2">
+                    <h2 style="margin-top: 30px;">Retirement</h2>
+                    <p>After we analyze your current financial habits and account for factors <br>like inflation, investment returns and Social Security, we’ll tell you <br> the lifestyle you’re on track to have at retirement.</p>
+                    <p>See how saving more, choosing a different retirement age, <br>or adjusting near-term goals impacts your future financial security.</p>
+                    <span class="button-getstart">
+                        <a href="finretire.html">GET STARTED</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!---Education-->
+        <div class="first-page">
+            <div class="grid_2_items">
+                <div style="flex:1">
+                    <img src="image/fin06.png" />
+                </div>
+                <div style="flex:2" class="content2">
+                    <h2 style="margin-top: 20px;">College</h2>
+                    <p>Let us walk you through the important aspects of college planning <br>— how much it’s projected to cost, how much financial aid you <br>can expect, and what you’re estimated to have in the future.</p>
+                    <p>Once you choose a college, we’ll help you set a realistic monthly savings <br>goal that accounts for the amount you’d like to cover <br>and your unique financial situation.</p>
+                    <span class="button-getstart">
+                        <a href="finedu.html">GET STARTED</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!--Advice Engine-->
+        <div class="second-page">
+
+        </div>
+
+    </main>
+
+    <!--Footer Area-->
+    <!-- Element that contains the client's contact email, phone and address details
+        (these can be dummy data). Please put your student name(s) and student id(s) in the footer with a link to your GitHub repository.-->
+    <footer>
+        <div class="flex">
+            <!--Zero Columns-->
+            <!--First Columns-->
+            <div class="footer_column1">
+                <h2>Contact us</h2>
+                <p><i class="fa fa-envelope"></i> Email: vietwealth@gmail.com</br></p>
+                <p>
+                    <i class="fa fa-phone" aria-hidden="true" style='font-size:15px'></i> Phone: (079) 330 7576</br>
+                </p>
+                <p> <i class="fa fa-map-marker" aria-hidden="true"></i> Address: Ho Chi Minh City</p>
+            </div>
+            <!--Second Columns-->
+            <div class="footer_column2">
+                <h2>More</h2>
+                <p>
+                    VietWealth 101
+                </p>
+                <p>
+                    VietWealth Advisor
+                </p>
+                <p>
+                    VietWealth Shop
+                </p>
+            </div>
+
+            <!--Third Columns-->
+            <div class="footer_column3">
+                <!--Remember to add link Github-->
+                <h3><a><i class="fa fa-linkedin" aria-hidden="true"></i></a></h3>
+                <h3><i class="fa fa-facebook-official" aria-hidden="true"></i></h3>
+                <h3><i class="fa fa-twitter" aria-hidden="true"></i></h3>
+            </div>
+        </div>
+        <hr />
+        <div class="footer_col">
+            <a href="terms.html"><span>Terms of Service</span></a>
+            <a href="privacy.html"><span>Privacy Policy</span></a>
+            <span>© VietWealth Inc. 2021</span>
+        </div>
+
+    </footer>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+</html>

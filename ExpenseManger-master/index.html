@@ -1,0 +1,354 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Expense Manager</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">Expense Manager</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <button class="btn btn-warning" type="button" onclick="showModal();">Add Category</button>
+      </div>
+    </nav>
+
+    <div class="container card-columns text-center" id="info" style="padding-top: 10px;"></div>
+
+    <div class="container card-group" style="padding-top: 10px; padding-bottom: 10px;">
+      <div class="row col-md-12">
+      <div class="card" id="addExpense">
+        <div class="card-header">
+          Add Expense
+        </div>
+        <div class="card-body">
+          <form id="expenseForm">
+            <div class="form-group">
+              <label>Amount</label>
+              <input class="form-control" type="text" name="amount">
+            </div>
+
+            <div class="form-group">
+              <label>Category</label>
+              <select class="form-control" id="exampleFormControlSelect1" name="category">
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Payment Method</label>
+              <input class="form-control" type="text" name="method">
+            </div>
+
+            <div class="form-group">
+              <label>Name</label>
+              <input class="form-control" type="text" name="name">
+            </div>
+            <button type="button" onclick="addExpense();" class="btn btn-primary">Add</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="card" id="listExpense">
+        <div class="card-header">
+          All Expenses
+        </div>
+        <div class="card-body" id="expensesTable">
+          <table class="table table-sm">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Method</th>
+              </tr>
+            </thead>
+            <tbody id="expensesTableTbody">
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+      </div>
+
+      <div class="row col-md-12">
+      <div class="card" id="listExpenseCategory">
+        <div class="card-header">
+          <form class="form-inline" id="categoryForm">
+            <div class="form-group">
+              <label for="category" class="sr-only">Category</label>
+              <input type="text" class="form-control" name="categorySelect" id="categorySelect" placeholder="Category">
+            </div>
+            <button type="button" onclick="filterCategory();" class="btn btn-primary">Filter</button>
+          </form>
+        </div>
+
+        <div class="card-body" id="expensesTableCategory">
+          <table class="table table-sm">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Method</th>
+              </tr>
+            </thead>
+            <tbody id="categoryTableTbody">
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <div class="card" id="listExpensePayment">
+        <div class="card-header">
+          <form class="form-inline" id="methodForm">
+            <div class="form-group">
+              <label for="category" class="sr-only">Payment Method</label>
+              <input type="text" class="form-control" id="methodSelect" placeholder="Method">
+            </div>
+            <button type="button" onclick="filterMethod();" class="btn btn-primary">Filter</button>
+          </form>
+        </div>
+        <div class="card-body" id="expensesTablePayment">
+          <table class="table table-sm">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Method</th>
+              </tr>
+            </thead>
+            <tbody id="methodTableTbody">
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="categoryModify" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add Category</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="inputCategoryList">
+            <form id="addCategoryForm">
+              <div class="form-group">
+                <label>Name</label>
+                <input class="form-control" type="text" name="name">
+                <small id="namelHelp" class="form-text text-muted">Please enter the name as a single word.</small>
+              </div>
+
+              <div class="form-group">
+                <label>Limit</label>
+                <input type="integer" class="form-control" name="limit">
+              </div>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="addCategory();">Add</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      var categories = sessionStorage.getItem('categories');
+      if(categories === null){
+        var categories = {
+          food : {name : "Food", limit : 1000, used : 0},
+          travel : {name : "Travel", limit : 2000, used : 0},
+          clothes : {name : "Clothes", limit : 3000, used : 0},
+          bills : {name : "Bills", limit : 4000, used : 0},
+          movies : {name : "Movies", limit : 3000, used : 0},
+          education : {name : "Education", limit : 4000, used : 0},
+        };
+        var expenses = [];
+        window.sessionStorage.categories = JSON.stringify(categories);
+        window.sessionStorage.expenses = JSON.stringify(expenses);
+        console.log("Initialised Session Storage");
+      }
+      else
+        console.log("Already existing.")
+    </script>
+
+    <script type="text/javascript">
+      // Display upper panel
+      var categories = JSON.parse(sessionStorage.getItem('categories'));
+      var html = '';
+      $.each(categories, function(key, value){
+        var width = String((value.used/value.limit)*100);
+        html += '<div class="card" style="width: 20rem;">';
+        html += '<div class="card-body">';
+        html += '<h4 class="card-title">'+ value.name + ' (' + String(parseInt(width)) + '%)' +'</h4>';
+        html += '<h6 class="card-subtitle mb-2 text-muted"> ₹' + String(value.used) + " / ₹" + String(value.limit) + '</h6>';
+        html += '<div class="progress">';
+        if(width > 100)
+          html += '<div class="progress-bar bg-danger" role="progressbar" style="width : ' + width + '%" aria-valuenow="' + width + '" aria-valuemin="0" aria-valuemax="100"></div>';
+        else
+          html += '<div class="progress-bar" role="progressbar" style="width : ' + width + '%" aria-valuenow="' + width + '" aria-valuemin="0" aria-valuemax="100"></div>';
+        html += '</div>';
+        html += '</div>';
+        html += '</div>';
+      });
+      $('#info').html(html);
+    </script>
+
+    <script type="text/javascript">
+      var categories = JSON.parse(sessionStorage.getItem('categories'));
+      var options = '';
+      $.each(categories, function(key, value){
+        options += '<option>' + value.name + '</option>'
+      });
+      $('#exampleFormControlSelect1').html(options);
+    </script>
+
+    <script type="text/javascript">
+      function addExpense(){
+        $('#expenseForm').each(function(){
+          var expense = {
+            amount: this.amount.value,
+            category: this.category.value,
+            method: this.method.value,
+            name: this.name.value,
+          };
+
+          var categories = JSON.parse(sessionStorage.getItem('categories'));
+          var used = parseInt(categories[expense.category.toLowerCase()].used);
+          var limit = parseInt(categories[expense.category.toLowerCase()].limit);
+          var now = parseInt(expense.amount);
+          if(!isNaN(now)){
+            var expenses = JSON.parse(sessionStorage.getItem('expenses'));
+            expenses.push(expense);
+            sessionStorage.setItem('expenses', JSON.stringify(expenses));
+
+            categories[expense.category.toLowerCase()].used = String(used + now);
+            sessionStorage.setItem('categories', JSON.stringify(categories));
+            this.reset();
+            if((used+now)/limit >= 0.8)
+              alert("You have used more than 80% budget of " + expense.category);
+            location.reload();
+          }
+          else
+          {
+           alert("Invalid");
+         }
+       });
+      }
+
+      function filterCategory(){
+        $("#categoryForm").each(function(){
+          var query = this.categorySelect.value.toLowerCase();
+          var expenses = JSON.parse(sessionStorage.getItem('expenses'));
+          var final = '';
+          for (var i = 0; i < expenses.length ; i++) {
+            if(expenses[i].category.toLowerCase() == query)
+            {
+              final += '<tr>';
+              final += '<td>' + expenses[i].name + '</td>';
+              final += '<td>₹' + expenses[i].amount + '</td>';
+              final += '<td>' + expenses[i].category + '</td>';
+              final += '<td>' + expenses[i].method + '</td>';
+              final += '</tr>';
+            }
+          }
+          $("#categoryTableTbody").html(final);
+          this.reset();
+        });
+      }
+
+      function filterMethod(){
+        $("#methodForm").each(function(){
+          var query = this.methodSelect.value.toLowerCase();
+          var expenses = JSON.parse(sessionStorage.getItem('expenses'));
+          var final = '';
+          for (var i = 0; i < expenses.length ; i++) {
+            if(expenses[i].method.toLowerCase() == query)
+            {
+              final += '<tr>';
+              final += '<td>' + expenses[i].name + '</td>';
+              final += '<td>₹' + expenses[i].amount + '</td>';
+              final += '<td>' + expenses[i].category + '</td>';
+              final += '<td>' + expenses[i].method + '</td>';
+              final += '</tr>';
+            }
+          }
+          $("#methodTableTbody").html(final);
+          this.reset();
+        });
+      }
+
+      function addCategory(){
+        $("#addCategoryForm").each(function(){
+          var name  = this.name.value;
+          var limit = this.limit.value;
+          var categories = JSON.parse(sessionStorage.getItem('categories'));
+          if(name.split(" ").length >= 2 || name == "")
+          {
+            alert("Invalid Category Name");
+            location.reload();
+          }
+          else if(isNaN(parseInt(limit)) || parseInt(limit) <= 0)
+          {
+            alert("Invalid limit");
+            location.reload();
+          }
+          else if(categories[name.toLowerCase] != null)
+          {
+            alert("Category exists");
+            location.reload();
+          }
+          else
+          {
+            category = {
+              name : name[0].toUpperCase() + name.slice(1),
+              limit : limit,
+              used : "0",
+            }
+            categories[name.toLowerCase()] = category;
+            sessionStorage.setItem('categories', JSON.stringify(categories));
+            location.reload();
+          }
+        });
+      }
+
+      function showModal()
+      {
+        $("#categoryModify").modal("show");
+      }
+    </script>
+
+    <script type="text/javascript">
+      var expenses = JSON.parse(sessionStorage.getItem('expenses'));
+      var html = '';
+      $.each(expenses, function(key, value){
+        html += '<tr>';
+        html += '<td>' + value.name + '</td>';
+        html += '<td>₹' + value.amount + '</td>';
+        html += '<td>' + value.category + '</td>';
+        html += '<td>' + value.method + '</td>';
+        html += '</tr>';
+      });
+      $('#expensesTableTbody').html(html);
+    </script>
+
+  </body>
+  </html>

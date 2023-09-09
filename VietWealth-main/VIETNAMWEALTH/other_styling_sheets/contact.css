@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "Bodonitown";
+    src: url("./Bodonitown/Bodonitown.ttf"); /* IE9 Compat Modes */
+}
+
+body {
+    background-color: #101727;
+}
+
+main {
+    height: 500px;
+}
+
+
+#main-title-container {
+    text-align: center;
+    margin-top: 10%;
+}
+
+#main-title-content h1 {
+    font-family: Bodonitown;
+    font-size: 3rem;
+    color: white;
+}
+
+#1-div-for-enter, #2-div-for-enter {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+#horizontal-in1 {
+    display: flex;
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#sub-horizon1 {
+    width: 100%;
+    text-align: left;
+}
+
+#sub-horizon2  {
+    width: 100%;
+    text-align: right;
+}
+
+#horizontal-in1 input  {
+    color: white;
+    width: 85%;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #ff611d;
+    border-radius: 0;
+    background-color: #101727;
+}
+
+#horizontal-in1 input::placeholder {
+    font-family: Bodonitown;
+    font-style: italic;
+}
+
+#horizontal-in3 {
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#horizontal-in3 input {
+    color: white;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #ff611d;
+    border-radius: 0;
+    margin-bottom: 70px;
+    background-color: #101727;
+}
+
+#horizontal-in3 input::placeholder {
+    font-family: Bodonitown;
+    font-style: italic;
+}
+
+#sub-horizon3 {
+    text-align: center;
+}
+
+#button-getstart-in-container {
+    border-radius: 20px;
+    background-color: #101727;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ff611d;
+    border: 2px solid #ff611d;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#button-getstart-in-container:hover {
+    background-color: white;
+    color: #101727;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    border: 1px solid #ff611d;
+}

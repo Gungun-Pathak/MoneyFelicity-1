@@ -1,0 +1,93 @@
+﻿@font-face {
+    font-family: "Bodonitown";
+    src: url("./Bodonitown/Bodonitown.ttf"); /* IE9 Compat Modes */
+}
+
+
+.faq-container h1 {
+    font-size: clamp(20px, 4vw, 30px);
+    line-height: 1.2;
+    margin-bottom: 40px;
+    margin-top: 150px;
+}
+
+main div h1 {
+}
+
+#search::placeholder {
+    font-family: "Open Sans", sans-serif;
+}
+
+#search {
+    font-family: "Open Sans", sans-serif;
+}
+
+div.faq-container {
+    max-width: 512px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    padding-top: 3%;
+    margin: 0 auto;
+    padding-bottom: 3%;
+}
+
+main {
+    justify-content: center;
+    background-color: #0f1627;
+    
+}
+
+body {
+    background-color: #0f1627;
+}
+
+summary {
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #ff611d;
+    /*background-image: radial-gradient(circle at 40% 91%, rgba(251, 251, 251,0.04) 0%, rgba(251, 251, 251,0.04) 50%,rgba(229, 229, 229,0.04) 50%, rgba(229, 229, 229,0.04) 100%),radial-gradient(circle at 66% 97%, rgba(36, 36, 36,0.04) 0%, rgba(36, 36, 36,0.04) 50%,rgba(46, 46, 46,0.04) 50%, rgba(46, 46, 46,0.04) 100%),radial-gradient(circle at 86% 7%, rgba(40, 40, 40,0.04) 0%, rgba(40, 40, 40,0.04) 50%,rgba(200, 200, 200,0.04) 50%, rgba(200, 200, 200,0.04) 100%),radial-gradient(circle at 15% 16%, rgba(99, 99, 99,0.04) 0%, rgba(99, 99, 99,0.04) 50%,rgba(45, 45, 45,0.04) 50%, rgba(45, 45, 45,0.04) 100%),radial-gradient(circle at 75% 99%, rgba(243, 243, 243,0.04) 0%, rgba(243, 243, 243,0.04) 50%,rgba(37, 37, 37,0.04) 50%, rgba(37, 37, 37,0.04) 100%),linear-gradient(90deg, rgb(34, 222, 237),rgb(135, 89, 215));*/
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 0.25rem;
+    text-align: left;
+    cursor: pointer;
+}
+
+p {
+    text-align: left;
+    padding-bottom:3%;
+}
+
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        margin-top: -10px
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0px
+    }
+}
+
+details > summary::after {
+    position: absolute;
+    right: 20px;
+}
+
+details[open] > summary::after {
+    position: absolute;
+    right: 20px;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}

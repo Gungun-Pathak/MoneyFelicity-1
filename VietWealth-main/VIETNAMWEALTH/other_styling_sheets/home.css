@@ -1,0 +1,399 @@
+@font-face {
+    font-family: "Bodonitown";
+    src: url("./Bodonitown/Bodonitown.ttf"); /* IE9 Compat Modes */
+}
+
+body {
+    background-color: #101727;
+}
+
+/* ------------------------------- section 1 ------------------------------- */
+#welcome-big-container {
+    padding: 50px 0;
+    display: flex;
+    background-color: #101727;
+    border-left: 15px double #ff611d;
+    border-right: 15px double #ff611d;
+}
+
+#welcome-banner-text-container, #welcome-banner-img-container {
+    width: 50%;
+}
+
+#welcome-banner-photo {
+    width: 700px;
+}
+
+/* welcome text container */
+#welcome-banner-text-container {
+    padding: 50px;
+}
+
+#vietwealth-little-container1 p{
+    /* background: radial-gradient(circle, rgba(255,29,88,1) 5%, rgba(255,97,29,0.9318102240896359) 120%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: #ff611d;
+    font-family: 'Bodonitown';
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 4px double #ff611d;
+    padding-bottom: 10px;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#big-text-content {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-family: 'Bodonitown';
+    font-size: 5.2em;
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+#vietwealth-little-container2 p{
+    /* background: radial-gradient(circle, rgba(255,29,88,1) 5%, rgba(255,97,29,0.9318102240896359) 120%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    border-top: 4px double #ff611d;
+    padding-top: 10px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#vietwealth-little-container3 p{
+    /* background: radial-gradient(circle, rgba(255,29,88,1) 5%, rgba(255,97,29,0.9318102240896359) 120%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 5px;
+    margin: 0 auto;
+}
+
+#start-button-in-welcome {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#button-getstart-in-container {
+    font-family: 'Arial';
+    background: rgb(255,29,88);
+    background: radial-gradient(circle, rgba(255,29,88,1) 0%, rgba(255,97,29,0.9318102240896359) 100%);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#button-getstart-in-container:hover {
+    background: none;
+    background-color: white;
+    color: #101727;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    border: 1px solid #ff611d;
+}
+
+/* ------------------------------- section 2 ------------------------------- */
+#welcome-banner-home-2 {
+    border-top: 4px solid #ff611d;
+}
+
+#big-horizontal {
+    display: flex;
+    background-color: white;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#welcome-banner-2-img-container1, #welcome-banner-2-img-container2, #welcome-banner-2-img-container3 {
+    width: 35%;
+}
+
+#welcome-banner-2-photo-1, #welcome-banner-2-photo-2, #welcome-banner-2-photo-3 {
+    width: 500px;
+}
+
+
+#welcome-banner-2-img-container1 {
+    padding-top: 80px;
+    border-left: 15px dashed #ff611d;
+}
+
+#vietwealth-little-container4 p {
+    color: #ff611d;
+    font-family: 'Bodonitown';
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding-left: 60px;
+}
+
+#big-text-content-2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #101727;
+    font-family: 'Bodonitown';
+    font-size: 5.2em;
+    margin: 0;
+    line-height: 1.25;
+    padding-left: 60px;
+    letter-spacing: 4px;
+}
+
+
+#welcome-banner-2-img-container3 {
+    padding-top: 40px;
+    border-right: 15px dashed #ff611d;
+    padding-right: 60px;
+}
+
+#vietwealth-little-container1-3-banner2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 24px;
+}
+
+#vietwealth-little-container2-3-banner2 {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* ------------------------------- section 3 ------------------------------- */
+#welcome-big-container-3 {
+    display: flex;
+    background-color: #101727;
+    border-top: 4px solid #ff611d;
+    border-left: 15px double #ff611d;
+    border-right: 15px double #ff611d;
+    border-bottom: 4px solid #ff611d;
+    padding: 50px;
+}
+
+#welcome-banner-3-photo-1 {
+    padding-top: 80px;
+    width: 700px;
+}
+
+#vietwealth-little-container5 p {
+    color: #ff611d;
+    font-family: 'Bodonitown';
+    font-size: 30px;
+    text-align: left;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+#big-text-content-3 {
+    text-transform: uppercase;
+    text-align: left;
+    color: white;
+    font-family: 'Bodonitown';
+    font-size: 5em;
+    margin: 0;
+    line-height: 1.25;
+    letter-spacing: 4px;
+    border-left: 15px dotted #ff611d; 
+    border-top: 15px dotted #ff611d; 
+    border-bottom: 15px dotted #ff611d; 
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#vietwealth-little-container6 { 
+    border-right: 15px dotted #ff611d; 
+    border-bottom: 15px dotted #ff611d; 
+}
+
+#little-text-content-1 {
+    padding: 0 20px;
+    color: white;
+    text-align: center;
+    margin-top: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 22px;
+    padding-top: 60px;
+}
+
+#little-text-content-2 {
+    padding: 0 20px;
+    color: white;
+    text-align: justify;
+    line-height: 1.5;
+    padding-bottom: 60px;
+}
+
+#start-button-in-banner3 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#button-getstart-in-banner3 {
+    font-family: 'Arial';
+    background: rgb(255,29,88);
+    background: radial-gradient(circle, rgba(255,29,88,1) 0%, rgba(255,97,29,0.9318102240896359) 100%);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#button-getstart-in-banner3:hover {
+    background: none;
+    background-color: white;
+    color: #101727;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    border: 1px solid #ff611d;
+}
+
+/* ------------------------------- section 4 ------------------------------- */
+#big-horizontal-2 {
+    display: flex;
+    background-color: white;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#welcome-banner-4-img-container1, #welcome-banner-4-img-container2, #welcome-banner-4-img-container3 {
+    width: 35%;
+}
+
+#welcome-banner-4-photo-1, #welcome-banner-4-photo-2, #welcome-banner-4-photo-3 {
+    width: 500px;
+}
+
+
+#welcome-banner-4-img-container1 {
+    padding-top: 40px;
+    border-left: 15px dashed #ff611d;
+    padding-left: 60px;
+}
+
+#vietwealth-little-container1-1-banner4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 24px;
+}
+
+#vietwealth-little-container2-1-banner4 {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#welcome-banner-4-img-container3 {
+    padding-top: 80px;
+    border-right: 15px dashed #ff611d;
+}
+
+#vietwealth-little-container4-banner4 p {
+    color: #ff611d;
+    font-family: 'Bodonitown';
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding-right: 60px;
+}
+
+#big-text-content-2-banner4 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #101727;
+    font-family: 'Bodonitown';
+    font-size: 4.8em;
+    margin: 0;
+    line-height: 1.25;
+    padding-right: 60px;
+    letter-spacing: 4px;
+}
+
+/* ------------------------------- section 5 ------------------------------- */
+#welcome-banner-home-5 {
+    padding: 300px 0;
+    background-color: #101727;
+    border-top: 4px solid #ff611d;
+    border-bottom: 4px solid #ff611d;
+    border-left: 4px dotted #ff611d;
+    border-right: 4px dotted #ff611d;
+}
+
+#banner5-img-container {
+    text-align: center;
+}
+
+#img-begin-journey {
+    width: 750px;
+}
+
+#begin-msg {
+    color: white;
+    font-family: 'Bodonitown';
+    font-size: 3em;
+    line-height: 1.25;
+    margin: 0;
+}
+
+#getstart-in-banner5-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#button-getstart-in-banner5 {
+    font-family: 'Arial';
+    background: rgb(255,29,88);
+    background: radial-gradient(circle, rgba(255,29,88,1) 0%, rgba(255,97,29,0.9318102240896359) 100%);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+#button-getstart-in-banner5:hover {
+    background: none;
+    background-color: white;
+    color: #101727;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    border: 1px solid #ff611d;
+}

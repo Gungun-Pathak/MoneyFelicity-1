@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>VietWealth - Planning</title>
+    <link rel="icon" href="image\smalllogo.png"
+          type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="investment_style.css">
+    <link rel="stylesheet" href="other_styling_sheets/news.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--FontList was getting from the Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+</head>
+<body>
+    <!--Header Area-->
+    <header>
+        <!--Navigation area-->
+        <nav class="navbar" id="myTopnav">
+            <!--Home (this page), About Us, Fees, My Account, Browse, FAQs, and Contact.-->
+            <a class="navbar-brand" href="home.html">
+                <div class="logo-image">
+                    <!--Source image: https://dribbble.com/shots/14624703-E-Commerce-Logo -->
+                    <img src="https://i.imgur.com/dotYs8i.png" class="img-fluid">
+                </div>
+            </a>
+            <!--Navigation bar-->
+            <div class="nav-items" style="float:right">
+                <!--News, Planning, Log In , Get started, FAQs-->
+                <span class="destinations">
+                    <a href="banking.html">Banking</a>
+                    <a href="investment.html" class="active-page">Investment</a>
+                    <a href="finance.html">Planning</a>
+                    <a href="myaccount.html">My Account</a>
+                    <a href="faq.html">FAQs</a>
+                    <a href="contact.html">Contact</a>
+                </span>
+                <span class="button-login">
+                    <a href="login.html">Log in</a>
+                </span>
+                
+                <span class="button-getstart">
+                    <a href="survey.html">Get started</a>
+                </span>
+                
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="grid_2_items first-page">
+            <div style="flex:1">
+                <p class="cap">VIETWEALTH</p>
+                <h2 style="line-height: 1; border-left: 15px dotted #ff611d; padding-left: 20px;">
+                    Investing is easy when
+                    it’s automated.
+                </h2>
+                <p style="font-size:18px;">
+                    Invest your long-term savings in minutes.
+                    Start with a portfolio tailor-made for you and customize it to your liking, or build your own portfolio. We’ll handle the trades, keeping you diversified, and our Tax-Loss Harvesting strategy can more than cover our annual .25% advisory fee.
+                </p>
+
+                <span class="button-getstart">
+                    <a href="investment.html">GET STARTED</a>
+                </span>
+
+            </div>
+            <div style="flex:1.15; margin-top:80px; margin-left:50px;">
+                <img src="image/in01.gif" />
+            </div>
+        </div>
+
+        <div class="grid_2_items first-page">
+
+            <div style="flex:1.15">
+                <img src="image/in02.png" />
+            </div>
+
+            <div style="flex:1">
+
+                <h2>
+                    Invest like
+                    an expert.
+                </h2>
+                <p style="font-size:18px;">
+                    It only takes a few minutes to get a personalized portfolio with diversified, low-cost index funds.
+                    Our recommended portfolios are crafted with time-tested investing strategies. With 10 global asset classes, they’re made to weather market conditions and grow your wealth over the long-term. No unnecessary risk. No finance class needed.
+                </p>
+
+                <span class="button-getstart">
+                    <a href="investment.html">GET STARTED</a>
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="grid_2_items first-page">
+            <div style="flex:1">
+
+                <h2 style="line-height: 1; border-left: 15px dotted #ff611d; padding-left: 20px;">
+                    Build a portfolio you believe in.
+                </h2>
+                <p style="font-size:18px;">
+                    Invest in healthcare, technology, clean energy, and more.
+                    Create a portfolio from scratch or customize our recommended portfolios. Either way, you’ll get to choose from popular ETFs, including socially responsible ones, and decide how much you want to invest where. Then, we’ll automatically rebalance your portfolio, reinvest dividends, and use Tax-Loss Harvesting to minimize the taxes you pay as you invest.
+                </p>
+
+                <span class="button-getstart">
+                    <a href="investment.html">GET STARTED</a>
+                </span>
+
+            </div>
+            <div style="flex:1.15;">
+                <img src="image/in03.png" />
+            </div>
+        </div>
+
+        <div class="special">
+            <h1 style="text-align:center; font-size:60px;">
+                <u>WITH TAX-LOSS HARVESTING</u>
+                <br />
+                our fee can pay for itself.
+            </h1>
+            <div style="text-align:center;width:100%;">
+                <p style="margin:50px; font-size:25px; margin-left:100px; margin-right:100px;">
+                    Our Tax-Loss Harvesting strategy can lower the taxes you pay as you invest. In fact, 96% of our clients that have a recommended portfolio had their fees covered by Tax-Loss Harvesting. Get started with just $500.
+                </p>
+            </div>
+            <div class="grid_2_items" style="justify-content:center; gap:50px;">
+                <div style="flex:1">
+                    <img src="image/in04.png" style="width:31%;" />
+                    <p>
+                        NO TRADING FEES,<br />
+                        NO ACCOUNT FEES
+                    </p>
+                </div>
+                <div style="flex:1">
+                    <p class="border-text">96%</p>
+                    <p style="text-align:center">
+                        OF CLIENTS HAVE HAD<br /> THEIR FEES COVERED BY<br /> TAX-LOSS HARVESTING
+                    </p>
+                </div>
+                <div style="flex:1">
+                    <p class="border-text">0.25%</p>
+                    <p>
+                        ANNUAL ADVISORY FEE
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid_2_items first-page">
+
+            <div style="flex:1.15;">
+                <img src="image/in05.png" />
+            </div>
+
+            <div style="flex:1">
+
+                <h2>
+                    No manual trading required.
+                </h2>
+                <p style="font-size:18px;">
+                    Make your money work harder without lifting a finger. We automatically rebalance your portfolio, reinvest dividends, and minimize the taxes you pay as you invest.
+                </p>
+
+                <span class="button-getstart">
+                    <a href="investment.html">GET STARTED</a>
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="special">
+            <h1 style="text-align:center; font-size:60px;">
+                <u>
+                    The accounts
+                    to meet your needs.
+                </u>
+            </h1>
+
+            <div class="grid_2_items" style="justify-content:center; gap:50px;">
+                <div style="flex:1">
+                    <img src="image/in06.png" style="width:31%;" />
+                    <p>
+                        <b>Invest for retirement</b><br />
+                        Traditional IRA, Roth IRA, SEP IRA, 401(k) Rollover
+                    </p>
+                </div>
+                <div style="flex:1">
+                    <img src="image/in07.png" style="width:31%;" />
+                    <p style="text-align:center">
+                        <b>Invest for education</b><br />
+                        529 College Savings
+                    </p>
+                </div>
+                <div style="flex:1">
+                    <img src="image/in08.png" style="width:31%;" />
+                    <p>
+                        <b>Invest for everything else</b><br />
+                        Individual Accounts, Joint Accounts, Trust Accounts
+                    </p>
+                </div>
+            </div>
+
+            <div class="first-page center" style="padding:20px 0; background-color:#101727">
+                <div class="content">
+                    <span class="button-getstart">
+                        <a href="investment.html">GET STARTED</a>
+                    </span>
+                </div>
+               
+            </div>
+            
+        </div>
+
+
+
+    </main>
+
+    <!--Footer Area-->
+    <!-- Element that contains the client's contact email, phone and address details
+        (these can be dummy data). Please put your student name(s) and student id(s) in the footer with a link to your GitHub repository.-->
+    <footer>
+        <div class="flex">
+            <!--Zero Columns-->
+            <!--First Columns-->
+            <div class="footer_column1">
+                <h2>Contact us</h2>
+                <p><i class="fa fa-envelope"></i> Email: vietwealth@gmail.com</br></p>
+                <p>
+                    <i class="fa fa-phone" aria-hidden="true" style='font-size:15px'></i> Phone: (079) 330 7576</br>
+                </p>
+                <p> <i class="fa fa-map-marker" aria-hidden="true"></i> Address: Ho Chi Minh City</p>
+            </div>
+            <!--Second Columns-->
+            <div class="footer_column2">
+                <h2>More</h2>
+                <p>
+                    VietWealth 101
+                </p>
+                <p>
+                    VietWealth Advisor
+                </p>
+                <p>
+                    VietWealth Shop
+                </p>
+            </div>
+
+            <!--Third Columns-->
+            <div class="footer_column3">
+                <!--Remember to add link Github-->
+                <h3><a><i class="fa fa-linkedin" aria-hidden="true"></i></a></h3>
+                <h3><i class="fa fa-facebook-official" aria-hidden="true"></i></h3>
+                <h3><i class="fa fa-twitter" aria-hidden="true"></i></h3>
+            </div>
+        </div>
+        <hr />
+        <div class="footer_col">
+            <a href="terms.html"><span>Terms of Service</span></a>
+            <a href="privacy.html"><span>Privacy Policy</span></a>
+            <span>© VietWealth Inc. 2021</span>
+        </div>
+
+    </footer>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+</html>
